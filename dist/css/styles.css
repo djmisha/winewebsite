@@ -1,0 +1,134 @@
+/*! sethmckinney.com v0.0.1 | (c) 2021 Misha | MIT License | https://github.com/djmisha/sethmckinney.com */
+/**
+ * @section Mixins
+ */
+/* Variables */
+/* Media Query break points */
+/**
+ * @section Base Styles
+ */
+/* line 5, src/sass/_base.scss */
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #58595b;
+  font-family: "Raleway", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  background-color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 18, src/sass/_base.scss */
+body.spin {
+  background-color: black;
+}
+
+/* line 23, src/sass/_base.scss */
+h1,
+h2,
+h3,
+span,
+p {
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+
+/* line 34, src/sass/_base.scss */
+h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.4em;
+}
+
+/* line 40, src/sass/_base.scss */
+h2 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* line 45, src/sass/_base.scss */
+h3 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* line 50, src/sass/_base.scss */
+p {
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 1280px) {
+  /* line 54, src/sass/_base.scss */
+  section {
+    padding: 0 calc(40px + (50% - (1280px / 2)));
+  }
+}
+
+/* line 60, src/sass/_base.scss */
+header {
+  text-align: center;
+}
+
+/* line 64, src/sass/_base.scss */
+img.logo {
+  padding-top: 80px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 64, src/sass/_base.scss */
+  img.logo {
+    max-width: 400px;
+  }
+}
+
+/* line 73, src/sass/_base.scss */
+main {
+  margin-top: 80px;
+  text-align: center;
+}
+
+/* line 78, src/sass/_base.scss */
+.face {
+  border-radius: 50%;
+  margin-bottom: 40px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* line 85, src/sass/_base.scss */
+.face.spin {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+/* line 90, src/sass/_base.scss */
+.social {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+/* line 95, src/sass/_base.scss */
+.social img {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 100, src/sass/_base.scss */
+.social span {
+  display: none;
+}

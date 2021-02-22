@@ -1,0 +1,102 @@
+/**
+ * @section Base Styles
+ */
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $secCol;
+    font-family: "Raleway", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    &.spin {
+        background-color: black;
+    }
+}
+
+h1,
+h2,
+h3,
+span,
+p {
+    font-family: "Raleway", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.4em;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+p {
+    padding-bottom: 30px;
+}
+
+section {
+    @include media(1280px) {
+        padding: 0 calc(40px + (50% - (1280px / 2)));
+    }
+}
+
+header {
+    text-align: center;
+}
+
+img.logo {
+    padding-top: 80px;
+    max-width: 80%;
+    margin: 0 auto;
+    @include media($tablet) {
+        max-width: 400px;
+    }
+}
+
+main {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.face {
+    border-radius: 50%;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    transform: rotate(0deg);
+    transform-style: preserve-3d;
+    &.spin {
+        transform: rotateY(360deg);
+    }
+}
+
+.social {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+}
+
+.social span {
+    display: none;
+}
